@@ -4,7 +4,7 @@
 
 This backend service fetches GitHub user profiles using the GitHub Public API, analyzes useful profile insights, and stores them in a MySQL database for future retrieval.
 
-## 🛠 Tech Stack
+## Tech Stack
 
 * Node.js
 * Express.js
@@ -45,10 +45,11 @@ npm install
 
 Create a `.env` file:
 
-DB_HOST=localhost
+DB_HOST=hostname
 DB_USER=root
-DB_PASSWORD=
+DB_PASSWORD=your password
 DB_NAME=github_analyzer
+DB_PORT=your-db-port
 
 
 
