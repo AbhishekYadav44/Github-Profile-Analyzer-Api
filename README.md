@@ -1,17 +1,96 @@
 #  GitHub Profile Analyzer API
 
 ##  Project Overview
-This backend service fetches GitHub user profiles using GitHub API, analyzes useful insights, and stores them in a MySQL database.
 
-##  Tech Stack
-- Node.js
-- Express.js
-- MySQL
-- Axios
-- GitHub Public API
+This backend service fetches GitHub user profiles using the GitHub Public API, analyzes useful profile insights, and stores them in a MySQL database for future retrieval.
+
+## 🛠 Tech Stack
+
+* Node.js
+* Express.js
+* MySQL (hosted on railway)
+* Axios
+* GitHub Public API
+
+##  Features
+
+* Fetch GitHub user profiles
+* Store profile data in MySQL
+* Prevent duplicate entries
+* Retrieve all analyzed profiles
+* Get profile by username
+* RESTful API architecture
+* Error handling and validation
+
+## Live API
+
+https://your-render-url.onrender.com
 
 ##  Setup Instructions
 
-## 1. Clone repo
-git clone <your-repo-link>
-cd project-folder
+### 1. Clone Repository
+
+git clone https://github.com/AbhishekYadav44/Github-Profile-Analyzer-Api.git
+cd Github-Profile-Analyzer-Api
+cd src
+
+
+### 2. Install Dependencies
+
+
+npm install
+
+
+### 3. Configure Environment Variables
+
+Create a `.env` file:
+
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=
+DB_NAME=github_analyzer
+
+
+
+### 4. Run the Server
+npm run dev
+
+### Get All Analyzed Profiles
+GET /api/profile
+
+Example : 
+https://your-render-url.onrender.com/api/profile
+
+
+### Get Profile By Username
+GET /api/profile/:username
+
+Example:
+GET https://your-render-url.onrender.com/api/profile/AbhishekYadav44
+
+### Analyze and Store a GitHub Profile
+POST /api/profile/analyze/:username
+
+Example:
+POST  https://your-render-url.onrender.com/api/profile/analyze/torvalds
+
+## sample response
+
+{
+    "success":true,
+    "data": {
+               "id":1,
+               "github_id":180807404,
+               "username":"AbhishekYadav44",
+               "name":"Abhishek yadav",
+               "bio":null,
+               "followers":1,
+               "following":1,
+               "public_repos":28,
+               "analyzed_at":"2026-06-15T21:11:24.000Z"
+            }
+}
+
+##  Author
+
+Abhishek Yadav
