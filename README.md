@@ -24,7 +24,7 @@ This backend service fetches GitHub user profiles using the GitHub Public API, a
 
 ## Live API
 
-https://your-render-url.onrender.com
+https://github-profile-analyzer-api-aeds.onrender.com
 
 ##  Setup Instructions
 
@@ -60,20 +60,20 @@ npm run dev
 GET /api/profile
 
 Example : 
-https://your-render-url.onrender.com/api/profile
+https://github-profile-analyzer-api-aeds.onrender.com/api/profile
 
 
 ### Get Profile By Username
 GET /api/profile/:username
 
 Example:
-GET https://your-render-url.onrender.com/api/profile/AbhishekYadav44
+GET https://github-profile-analyzer-api-aeds.onrender.com/api/profile/AbhishekYadav44
 
 ### Analyze and Store a GitHub Profile
 POST /api/profile/analyze/:username
 
 Example:
-POST  https://your-render-url.onrender.com/api/profile/analyze/torvalds
+POST  https://github-profile-analyzer-api-aeds.onrender.com/api/profile/analyze/AbhishekYadav44
 
 ## sample response
 
