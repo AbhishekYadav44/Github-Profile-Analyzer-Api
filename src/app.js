@@ -30,7 +30,7 @@ app.get("/", (req, res) => {
   });
 });
 
-app.use("/api/profile", profileRoutes)
+app.use("/api/profiles", profileRoutes)
 
 app.listen(3000,()=>{
     console.log('server is running on port 3000')
