@@ -60,20 +60,20 @@ npm run dev
 GET /api/profile
 
 Example : 
-https://github-profile-analyzer-api-aeds.onrender.com/api/profile
+https://github-profile-analyzer-api-aeds.onrender.com/api/profiles
 
 
 ### Get Profile By Username
 GET /api/profile/:username
 
 Example:
-GET https://github-profile-analyzer-api-aeds.onrender.com/api/profile/AbhishekYadav44
+GET https://github-profile-analyzer-api-aeds.onrender.com/api/profiles/AbhishekYadav44
 
 ### Analyze and Store a GitHub Profile
 POST /api/profile/analyze/:username
 
 Example:
-POST  https://github-profile-analyzer-api-aeds.onrender.com/api/profile/analyze/AbhishekYadav44
+POST  https://github-profile-analyzer-api-aeds.onrender.com/api/profiles/analyze/AbhishekYadav44
 
 ## sample response
 
