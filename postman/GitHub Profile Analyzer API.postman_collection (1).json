@@ -1,0 +1,76 @@
+{
+  "info": {
+    "_postman_id": "26e9f8ac-7d71-4901-af00-31ff9c95cec3",
+    "name": "GitHub Profile Analyzer API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "45964928"
+  },
+  "item": [
+    {
+      "name": "Get all Profiles",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://github-profile-analyzer-api-aeds.onrender.com/api/profiles",
+          "protocol": "https",
+          "host": [
+            "github-profile-analyzer-api-aeds",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "profiles"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Single Profile",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://github-profile-analyzer-api-aeds.onrender.com/api/profiles/AbhishekYadav44",
+          "protocol": "https",
+          "host": [
+            "github-profile-analyzer-api-aeds",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "profiles",
+            "AbhishekYadav44"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Analyze and save  Profile information in database",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "https://github-profile-analyzer-api-aeds.onrender.com/api/profiles/analyze/utkarsh-saxena271",
+          "protocol": "https",
+          "host": [
+            "github-profile-analyzer-api-aeds",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "profiles",
+            "analyze",
+            "utkarsh-saxena271"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
