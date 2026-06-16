@@ -18,6 +18,17 @@ main().then(()=>{
 }).catch((e)=>{
     console.log(e)
 })
+app.get("/", (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: "GitHub Profile Analyzer API is running successfully.",
+    endpoints: {
+      getAllProfiles: "/api/profile",
+      getProfileByUsername: "/api/profile/:username",
+      analyzeProfile: "POST /api/profile/analyze/:username"
+    }
+  });
+});
 
 app.use("/api/profile", profileRoutes)
 

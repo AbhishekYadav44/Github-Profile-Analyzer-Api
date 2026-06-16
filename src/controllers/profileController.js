@@ -111,7 +111,7 @@ export const getAllProfiles = async (req, res) => {
             message: "All profiles fetched successfully",
             data: rows
         });
-
+       
     } catch (error) {
         res.status(500).json({
             success: false,
